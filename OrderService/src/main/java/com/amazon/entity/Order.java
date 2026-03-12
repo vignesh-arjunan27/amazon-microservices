@@ -24,6 +24,7 @@ public class Order {
 
     private Long productId;
     private Double price;
+    private Double totalPrice;
     private Integer quantity;
     private String orderStatus;
     private String paymentStatus;

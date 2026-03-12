@@ -43,6 +43,7 @@ public class OrderService {
 
         order.setOrderStatus("ORDERED");
         order.setPaymentStatus("PENDING");
+        order.setTotalPrice(order.getQuantity() * order.getPrice());
 
         Optional<Order> existingOrder = orderRepo.findExistingProductID(order.getProductId());
 
